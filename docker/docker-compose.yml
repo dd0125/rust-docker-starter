@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  haskell:
+    build: rust
+    container_name: '${COMPOSE_PROJECT_NAME}-rust'
+    tty: true
+    volumes:
+      - "../src/rust:/opt/src"
